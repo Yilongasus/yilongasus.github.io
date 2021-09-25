@@ -181,6 +181,10 @@ button[type="submit"]:hover {
     margin: 0 auto;
   }
 
+  .col-md-2.mb-4.pt-4.text-left.shadow-5 {
+   text-align: center;
+  } 
+ 
   .card {
     width: 85%;
     margin: 0 auto;
