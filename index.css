@@ -39,7 +39,7 @@ a:hover {
   width: 144px;
 }
 
-/* .yellowDiv {
+/* .yellowDiv {   原先營業時間區塊(黃)，在不同裝置下會跑版。
   position: relative;
   top: -77px;
   padding: 3.7em 0 0 2.5em;
@@ -49,7 +49,7 @@ a:hover {
   width:380px;
   height:300px;
   border-radius: 125px;
-} */
+}  */
 
 .yellowDiv {
   display: none;
@@ -194,6 +194,7 @@ button[type="submit"]:hover {
     padding: 0;
     margin: 2% 0;
     border-radius: 5px;
+    display: block;
   }
  
   #yellowDiv {
