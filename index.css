@@ -53,8 +53,9 @@ a:hover {
 
 #yellowDiv {
   width: 380px;
-  display:block;
+  display: block;
   margin: 0 auto;
+  z-index: 3; 
 }
 
 .purpleDiv {
