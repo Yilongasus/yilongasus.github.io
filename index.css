@@ -34,11 +34,12 @@ a:hover {
   border-bottom: 2px solid #33B5E5;
   transition: 0.2s;
 }
+
 .navUnderLine:hover::after {
   width: 144px;
 }
 
-.yellowDiv {
+/* .yellowDiv {
   position: relative;
   top: -77px;
   padding: 3.7em 0 0 2.5em;
@@ -48,6 +49,12 @@ a:hover {
   width:380px;
   height:300px;
   border-radius: 125px;
+} */
+
+#yellowDiv {
+  width: 380px;
+  display:block;
+  margin: 0 auto;
 }
 
 .purpleDiv {
