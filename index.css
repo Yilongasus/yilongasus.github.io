@@ -182,7 +182,7 @@ button[type="submit"]:hover {
   }
 
   .col-md-2.mb-4.pt-4.text-left.shadow-5 {
-   text-align: center;
+   text-align: center !important;
   } 
  
   .card {
