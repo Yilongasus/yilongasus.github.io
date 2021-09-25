@@ -51,7 +51,13 @@ a:hover {
   border-radius: 125px;
 } */
 
+.yellowDiv {
+  display: none;
+}
+
 #yellowDiv {
+  position: relative;
+  top: -77px; 
   width: 380px;
   display: block;
   margin: 0 auto;
@@ -189,7 +195,11 @@ button[type="submit"]:hover {
     margin: 2% 0;
     border-radius: 5px;
   }
-  
+ 
+  #yellowDiv {
+    display:none;
+  }
+   
   .blueDiv,
   .purpleDiv {
     display: none;
