@@ -209,7 +209,8 @@ button[type="submit"]:hover {
 @media screen and (max-width:750px) {
   #topButton {
     right: 214px;  
-    bottom: 50px;     
+    bottom: 50px;   
+    z-index: 2; 	  
   }	
 	
   .topRightNew{
