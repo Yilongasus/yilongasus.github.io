@@ -190,6 +190,16 @@ button[type="submit"]:hover {
   100% {transform:rotatez(0deg);}
 }
 
+::selection { 
+  background: rgb(23, 139, 181);
+  color: #fff;
+}
+
+::-moz-selection { 
+  background: rgb(23, 139, 181);
+  color: #fff;
+}
+
 @media screen and (max-width:940px) {
   .blueDiv {
     display: none;
@@ -198,7 +208,8 @@ button[type="submit"]:hover {
 
 @media screen and (max-width:750px) {
   #topButton {
-    right: 30px;    
+    right: 214px;  
+    bottom: 50px;     
   }	
 	
   .topRightNew{
