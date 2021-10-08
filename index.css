@@ -208,9 +208,8 @@ button[type="submit"]:hover {
 } 
 
 @media screen and (max-width:750px) {	
-  #topButton {
-    right: 0px;  
-    left: 20px;
+  #topButton { 
+    right: 40px;
     z-index: 2147483647;
   } 
  
