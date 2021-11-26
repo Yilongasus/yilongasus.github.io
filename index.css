@@ -213,6 +213,10 @@ button[type="submit"]:hover {
     z-index: 2147483647;
   } 
  
+  .navUnderLine {
+    position: static; /* border-bottom center */
+  } 
+ 
   .topRightNew{
     margin: 0 auto;
   }
