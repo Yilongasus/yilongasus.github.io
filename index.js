@@ -1,1 +1,0 @@
-$(document).ready(function () { $('#topButton').hide(); $("#topButton").click(function(){ $("html").animate({scrollTop:0}, 500);});$(window).scroll(function() { if ( $(this).scrollTop() > 100) { $('#topButton').fadeIn("fast");}else { $('#topButton').stop().fadeOut("fast");}}); });
