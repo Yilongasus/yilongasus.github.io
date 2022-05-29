@@ -1,0 +1,283 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Inter';
+}
+
+.timberwolfColor {
+    color: #D8D4CA;
+}
+
+.deepChampagneColor {
+    color: #F0D19B;
+}
+
+.antiqueBrassColor {
+    color: #C0937D;
+}
+
+.rustColor {
+    color: #A8522F;
+}
+
+.textSize47 {
+    font-size: 47px;
+}
+
+.textSize25 {
+    font-size: 25px;
+}
+
+.textSize16 {
+    font-size: 16px;
+}
+
+nav {
+    background: linear-gradient(0deg,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)),
+    rgba(168, 82, 47, 0.7);
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    background: linear-gradient(0deg,
+     rgba(0, 0, 0, 0.7),
+     rgba(0, 0, 0, 0.7)),
+     rgba(168, 82, 47, 0.7);    
+}
+
+
+/*
+
+首頁第一屏
+
+*/
+#oneScreen {
+    background: url(./static/img/indexOneBgImg.png) fixed no-repeat;
+    background-size: cover;
+    padding-top: 7%;
+    padding-bottom: 15%;
+}
+
+
+/* seeMore向右箭頭 */
+#leftArrow {
+    text-decoration: none;
+    font-size: 55px;
+    height: 4.8rem; width: 5rem;
+    margin:0 0 2% 20%;
+    background-color: rgba(206, 212, 218, 0.7);
+    border: 2px solid #CED4DA;
+    border-radius: 50%;    
+}
+
+#seeMore {
+    content: '';
+    border-bottom: 2px solid #CED4DA;
+    transition: 0.2s;
+}
+
+#indexTwoRight {
+    margin-left: 14%;
+}
+
+#leftArrow:hover {
+    animation: rightArrow 1.5s linear infinite;    
+}
+
+@keyframes rightArrow {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    25% {
+        transform: translate(10px, 0px);
+    }
+    55% {
+        transform: translate(30px, 0px);
+    }      
+    75% {
+        transform: translate(20px, 0px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }  
+}
+
+
+/*
+
+首頁第二屏
+
+*/
+#indexTwo {
+    background: linear-gradient(189.03deg, #D8D4CA 12.89%, rgba(216, 212, 202, 0) 100.28%);
+    padding: 7% 0%;
+}
+
+
+/*
+首頁第三屏
+*/
+#indexThree {
+    background: linear-gradient(180.81deg, #C0937D 0.82%, rgba(192, 147, 125, 0) 99.42%); 
+    padding-bottom: 7%;
+}
+
+
+/*
+
+首頁第四屏
+
+*/
+#indexFour {
+    background-size: cover;
+    padding-bottom: 37%;
+    margin: 0 auto;
+}
+
+.mainFourQuestionBackground {
+    background: #D8D4CA;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.mainFourQuestionBackground #demo {
+    background-color: #ffffff;
+    border-radius: 10px;    
+}
+
+#mainFourArrow:focus {
+    box-shadow: none;
+}
+
+
+
+/*
+
+首頁第四屏
+
+*/
+
+#blueYellowBackgroundImg {
+    background: url("../images/blueYellowBackground.png") center center no-repeat;
+    background-size: cover;
+    height: 1121px;
+    margin: 0 auto;
+}
+
+#blueYellowBackgroundImg form {
+    border-radius: 20px;
+}
+
+#blueYellowBackgroundImg form label {
+    color: #000;
+}
+
+#formFiveForm input,
+#formFiveForm textarea {
+    background-color: #F2F2F2;    
+    border: none;
+    border-radius: 15px;
+}
+
+
+
+/*
+
+首頁第五屏
+
+*/
+
+#FiveBackgroundImg {
+    background: url("../onePageWeb/static/img/indexFiveBackground.png") center center no-repeat;
+    background-size: cover;
+    height: 1121px;    
+    margin: 0 auto;    
+}
+
+#formFiveForm {
+    background-color: #F2F2F2;    
+    border-radius: 20px;
+}
+
+#formFiveForm button[type=submit] {
+    background: #C0937D; 
+    border-radius: 15px;
+}
+
+#formFiveForm button[type=submit]:hover {
+    background: #A8522F;
+}
+
+#FiveBackgroundImg form label {
+    color: #000;
+}
+
+#FiveBackgroundImg form input,
+#FiveBackgroundImg form textarea {
+    border: none;
+    border-radius: 15px;
+}
+
+#indexFiveIcon path:hover {
+    cursor: pointer;
+    fill: #A8522F;
+}
+
+
+/*
+
+footer
+
+*/
+#topArrow {
+    text-decoration: none;
+    font-size: 55px;
+    height: 4.8rem; width: 5rem;
+    padding-top: 3.8%;
+    margin: 0 auto;
+    background-color: rgba(206, 212, 218, 0.7);
+    border: 2px solid #CED4DA;
+    border-radius: 50%;    
+}
+
+#topArrowLine {
+    content: '';
+    border-bottom: 2px solid #CED4DA;
+    width: 80%;
+    margin: 0 auto;
+    transition: 0.2s;
+}
+
+#topArrow:hover {
+    animation: topArrow 3s linear infinite;    
+}
+
+@keyframes topArrow {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    25% {
+        transform: translate(0px, -10px);
+    }
+    55% {
+        transform: translate(0px, -20px);
+    }      
+    75% {
+        transform: translate(0px, -15px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }    
+}
+
+#footerIcon path:hover {
+    cursor: pointer;
+    fill: #ffffff;
+}
