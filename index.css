@@ -165,7 +165,6 @@ footer {
 */
 
 #blueYellowBackgroundImg {
-    background: url("../images/blueYellowBackground.png") center center no-repeat;
     background-size: cover;
     height: 1121px;
     margin: 0 auto;
@@ -195,7 +194,7 @@ footer {
 */
 
 #FiveBackgroundImg {
-    background: url("../onePageWeb/static/img/indexFiveBackground.png") center center no-repeat;
+    background: url("./static/img/indexFiveBackground.png") center center no-repeat;
     background-size: cover;
     height: 1121px;    
     margin: 0 auto;    
