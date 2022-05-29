@@ -41,6 +41,17 @@ nav {
     rgba(168, 82, 47, 0.7);
 }
 
+.nav-link:hover {
+animation: nav 0.3s ease-in;   
+}
+
+@keyframes nav {
+    0% {transform:rotatez(-6deg);}
+    45% {transform:rotatez(0deg);} 
+    75% {transform:rotatez(6deg);}
+    100% {transform:rotatez(0deg);}
+}
+
 a {
     text-decoration: none;
 }
@@ -279,4 +290,23 @@ footer
 #footerIcon path:hover {
     cursor: pointer;
     fill: #ffffff;
+}
+
+@media screen and (max-width: 750px) {
+    #leftArrowDiv {
+        margin-top: 15%;
+    }  
+    
+    #indexTwoRight {
+        margin-left: 0%;
+    }
+
+    #indexThree img {
+        margin-top: 7%;
+    }
+
+    #indexFiveIcon {
+        text-align: center !important;
+        margin-top: 4%;
+    }
 }
