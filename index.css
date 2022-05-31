@@ -70,7 +70,7 @@ footer {
 
 */
 #oneScreen {
-    background: url(./static/img/indexOneBgImg.png) fixed no-repeat;
+    background: url(./static/img/indexOneBgImg.png) fixed center center no-repeat;
     background-size: cover;
     padding-top: 7%;
     padding-bottom: 15%;
@@ -249,7 +249,8 @@ footer
 #topArrow {
     text-decoration: none;
     font-size: 55px;
-    height: 4.8rem; width: 5rem;
+    display: block;
+    width: 5rem;    
     padding-top: 3.8%;
     margin: 0 auto;
     background-color: rgba(206, 212, 218, 0.7);
@@ -292,14 +293,16 @@ footer
     fill: #ffffff;
 }
 
+@media screen and (max-width: 945px) {
+    #indexTwoRight {
+        margin-left: 0%;
+    }
+}
+
 @media screen and (max-width: 750px) {
     #leftArrowDiv {
         margin-top: 15%;
     }  
-    
-    #indexTwoRight {
-        margin-left: 0%;
-    }
 
     #indexThree img {
         margin-top: 7%;
