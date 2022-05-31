@@ -293,7 +293,7 @@ footer
     fill: #ffffff;
 }
 
-@media screen and (max-width: 945px) {
+@media screen and (max-width: 991px) {
     #indexTwoRight {
         margin-left: 0%;
     }
