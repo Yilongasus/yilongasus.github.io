@@ -300,6 +300,11 @@ footer
 }
 
 @media screen and (max-width: 750px) {
+
+    #oneScreenContent {
+        padding-right: 15px !important;
+    }
+
     #leftArrowDiv {
         margin-top: 15%;
     }  
