@@ -73,7 +73,7 @@ footer {
     background: url(./static/img/indexOneBgImg.png) fixed center center no-repeat;
     background-size: cover;
     padding-top: 7%;
-    padding-bottom: 15%;
+    padding-bottom: 18%;
 }
 
 
@@ -82,6 +82,8 @@ footer {
     text-decoration: none;
     font-size: 55px;
     height: 4.8rem; width: 5rem;
+    text-align: center;
+    line-height: 4.8rem;    
     margin:0 0 2% 20%;
     background-color: rgba(206, 212, 218, 0.7);
     border: 2px solid #CED4DA;
@@ -251,6 +253,9 @@ footer
     font-size: 55px;
     display: block;
     width: 5rem;    
+    height: 4.8rem;
+    line-height: 4.8rem;    
+    text-align: center;
     padding-top: 3.8%;
     margin: 0 auto;
     background-color: rgba(206, 212, 218, 0.7);
