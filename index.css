@@ -96,7 +96,7 @@ footer {
     transition: 0.2s;
 }
 
-#indexTwoRight {
+#twoScreenRight {
     margin-left: 14%;
 }
 
@@ -128,7 +128,7 @@ footer {
 首頁第二屏
 
 */
-#indexTwo {
+#twoScreen {
     background: linear-gradient(189.03deg, #D8D4CA 12.89%, rgba(216, 212, 202, 0) 100.28%);
     padding: 7% 0%;
 }
@@ -137,7 +137,7 @@ footer {
 /*
 首頁第三屏
 */
-#indexThree {
+#threeScreen {
     background: linear-gradient(180.81deg, #C0937D 0.82%, rgba(192, 147, 125, 0) 99.42%); 
     padding-bottom: 7%;
 }
@@ -148,7 +148,7 @@ footer {
 首頁第四屏
 
 */
-#indexFour {
+#fourScreen {
     background-size: cover;
     padding-bottom: 37%;
     margin: 0 auto;
@@ -177,20 +177,6 @@ footer {
 
 */
 
-#blueYellowBackgroundImg {
-    background-size: cover;
-    height: 1121px;
-    margin: 0 auto;
-}
-
-#blueYellowBackgroundImg form {
-    border-radius: 20px;
-}
-
-#blueYellowBackgroundImg form label {
-    color: #000;
-}
-
 #formFiveForm input,
 #formFiveForm textarea {
     background-color: #F2F2F2;    
@@ -206,10 +192,10 @@ footer {
 
 */
 
-#FiveBackgroundImg {
+#fiveScreen {
     background: url("./static/img/indexFiveBackground.png") center center no-repeat;
     background-size: cover;
-    height: 1121px;    
+    /* height: 1121px;     */
     margin: 0 auto;    
 }
 
@@ -227,12 +213,12 @@ footer {
     background: #A8522F;
 }
 
-#FiveBackgroundImg form label {
+#fiveScreen form label {
     color: #000;
 }
 
-#FiveBackgroundImg form input,
-#FiveBackgroundImg form textarea {
+#fiveScreen form input,
+#fiveScreen form textarea {
     border: none;
     border-radius: 15px;
 }
@@ -241,6 +227,7 @@ footer {
     cursor: pointer;
     fill: #A8522F;
 }
+
 
 
 /*
@@ -299,7 +286,7 @@ footer
 }
 
 @media screen and (max-width: 991px) {
-    #indexTwoRight {
+    #twoScreenRight {
         margin-left: 0%;
     }
 }
@@ -314,7 +301,7 @@ footer
         margin-top: 15%;
     }  
 
-    #indexThree img {
+    #threeScreen img {
         margin-top: 7%;
     }
 
