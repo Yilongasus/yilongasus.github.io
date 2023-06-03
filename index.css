@@ -73,7 +73,7 @@ footer {
     background: url(./static/img/indexOneBgImg.png) fixed center center no-repeat;
     background-size: cover;
     padding-top: 7%;
-    padding-bottom: 18%;
+    padding-bottom: 20%;
 }
 
 
@@ -200,6 +200,7 @@ footer {
 }
 
 #formFiveForm {
+    width: 75%;
     background-color: #F2F2F2;    
     border-radius: 20px;
 }
@@ -235,6 +236,19 @@ footer {
 footer
 
 */
+.linkColorWhite:hover {
+ color: #ffffff !important;
+ animation-name: linkMove;
+ animation-duration: 1s;
+}
+
+@keyframes linkMove {
+    0% {transform:translate(5px, 0px);}
+    25% {transform:translate(15px, 0px);}
+    75% {transform:translate(25px, 0px);}    
+    100% {transform: translate(0);}
+}
+
 #topArrow {
     text-decoration: none;
     font-size: 55px;
