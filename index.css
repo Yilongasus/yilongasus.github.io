@@ -58,9 +58,15 @@ a {
 
 footer {
     background: linear-gradient(0deg,
-     rgba(0, 0, 0, 0.7),
-     rgba(0, 0, 0, 0.7)),
-     rgba(168, 82, 47, 0.7);    
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)),
+        rgba(168, 82, 47, 0.7);
+}
+
+.mainFourArrowButtom.up {
+    color: rgba(168, 82, 47, 0.7);
+    transform: rotate(180deg);
+    transition: transform 0.3;
 }
 
 
