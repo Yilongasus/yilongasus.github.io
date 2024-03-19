@@ -16,6 +16,9 @@
   <meta property="og:image" content="/static/img/seoImage.png">
   <meta property="og:description" content="Welcome to our store! We offer a diverse range of products and excellent services to ensure you have a delightful shopping experience.">  
   
+  <!-- Google 第三方登入 -->
+  <meta name="google-signin-client_id" content="977111883266-qiol7u2pjo83gf0qh7u8n1qgakp6b8m3.apps.googleusercontent.com">
+
   <!-- bootstrap5 css -->
   <link rel="stylesheet" href="./lib/bootstrap5/css/bootstrap.css">
   <link rel="stylesheet" href="./lib/bootstrap5/css/bootstrap.min.css">
@@ -274,7 +277,7 @@
             </svg>
           </div>
       </div>      
-
+      <div class="g-signin2" data-onsuccess="onSignIn"></div>
     </div>   
   </div>
 
@@ -283,7 +286,7 @@
       <div class="text-center col-lg-2 col-md-6 ">
         <a class="text-white" href="#" id="topArrow">^</a>
         <div class="pt-3" id="topArrowLine"></div>          
-      </div>      
+      </div>
     </div>    
     <p class="my-3">Copyright © 2022 Jingyi All Rights Reserved.</p>
   </div>
@@ -300,10 +303,21 @@
 
   <!-- index js -->
   <script src="./index.js"></script>
+
+
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
   <script>
     AOS.init({
       duration: 2000
     });
+
+    function onSignIn(googleUser) {
+      var profile = googleUser.getBasicProfile();
+      console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+      console.log('Name: ' + profile.getName());
+      console.log('Image URL: ' + profile.getImageUrl());
+      console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+    }
   </script>
 </body>
 
