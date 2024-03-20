@@ -279,7 +279,7 @@
       </div>      
       <div id="g_id_onload"
             data-client_id="977111883266-qiol7u2pjo83gf0qh7u8n1qgakp6b8m3.apps.googleusercontent.com"
-            data-onsuccess="handleCredentialResponse">
+            data-callback="handleCredentialResponse">
       </div>
       <div class="g_id_signin" data-type="standard"></div>
     </div>   
@@ -315,13 +315,15 @@
       duration: 2000
     });
 
-    function handleCredentialResponse(googleUser) {
-      console.log(googleUser.getBasicProfile())
-      // var profile = googleUser.getBasicProfile();
-      // console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-      // console.log('Name: ' + profile.getName());
-      // console.log('Image URL: ' + profile.getImageUrl());
-      // console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+    function handleCredentialResponse(response) {
+      const responsePayload = decodeJwtResponse(response.credential);
+
+      console.log("ID: " + responsePayload.sub);
+      console.log('Full Name: ' + responsePayload.name);
+      console.log('Given Name: ' + responsePayload.given_name);
+      console.log('Family Name: ' + responsePayload.family_name);
+      console.log("Image URL: " + responsePayload.picture);
+      console.log("Email: " + responsePayload.email);
     }
   </script>
 </body>
