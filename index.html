@@ -277,7 +277,11 @@
             </svg>
           </div>
       </div>      
-      <div class="g-signin2" data-onsuccess="onSignIn"></div>
+      <div id="g_id_onload"
+            data-client_id="977111883266-qiol7u2pjo83gf0qh7u8n1qgakp6b8m3.apps.googleusercontent.com"
+            data-callback="handleCredentialResponse">
+      </div>
+      <div class="g_id_signin" data-type="standard"></div>
     </div>   
   </div>
 
@@ -304,8 +308,8 @@
   <!-- index js -->
   <script src="./index.js"></script>
 
-
-  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <!-- Google 第三方登入 -->
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
   <script>
     AOS.init({
       duration: 2000
