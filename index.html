@@ -315,26 +315,23 @@
       duration: 2000
     });
 
-    // 取出jwt解碼
     function decodeJwtResponse(token) {
         const parts = token.split('.'),
               payload = parts[1],
               decodedPayload = JSON.parse(atob(payload));
-
         return decodedPayload;
     }
 
     function handleCredentialResponse(response) {
       const responsePayload = decodeJwtResponse(response.credential);
-
-      console.log(response)
-
-      console.log("ID: " + responsePayload.sub);
-      console.log('Full Name: ' + responsePayload.name);
-      console.log('Given Name: ' + responsePayload.given_name);
-      console.log('Family Name: ' + responsePayload.family_name);
-      console.log("Image URL: " + responsePayload.picture);
-      console.log("Email: " + responsePayload.email);
+      console.log(`
+        照片 ${ responsePayload.picture }
+        全名 ${ responsePayload.name }
+        姓氏 ${ responsePayload.family_name }
+        名字 ${ responsePayload.given_name }
+        信箱 ${ responsePayload.email }
+        發行者 ${ responsePayload.iss }
+      `);
     }
   </script>
 </body>
