@@ -315,8 +315,19 @@
       duration: 2000
     });
 
+    // 取出jwt解碼
+    function decodeJwtResponse(token) {
+        const parts = token.split('.'),
+              payload = parts[1],
+              decodedPayload = JSON.parse(atob(payload));
+
+        return decodedPayload;
+    }
+
     function handleCredentialResponse(response) {
       const responsePayload = decodeJwtResponse(response.credential);
+
+      console.log(response)
 
       console.log("ID: " + responsePayload.sub);
       console.log('Full Name: ' + responsePayload.name);
