@@ -17,7 +17,7 @@
   <meta property="og:description" content="Welcome to our store! We offer a diverse range of products and excellent services to ensure you have a delightful shopping experience.">  
   
   <!-- Google 第三方登入 -->
-  <meta name="google-signin-client_id" content="977111883266-qiol7u2pjo83gf0qh7u8n1qgakp6b8m3.apps.googleusercontent.com">
+  <!-- <meta name="google-signin-client_id" content="977111883266-qiol7u2pjo83gf0qh7u8n1qgakp6b8m3.apps.googleusercontent.com"> -->
 
   <!-- bootstrap5 css -->
   <link rel="stylesheet" href="./lib/bootstrap5/css/bootstrap.css">
@@ -278,7 +278,7 @@
           </div>
       </div> 
       
-      <div id="g_id_onload"
+      <!-- <div id="g_id_onload"
           data-client_id="977111883266-qiol7u2pjo83gf0qh7u8n1qgakp6b8m3.apps.googleusercontent.com"
           data-context="signin"
           data-ux_mode="popup"
@@ -296,7 +296,7 @@
           data-size="large"
           data-logo_alignment="left"
           data-width="300">
-      </div>
+      </div> -->
     </div>   
   </div>
 
@@ -324,30 +324,30 @@
   <script src="./index.js"></script>
 
   <!-- Google 第三方登入 -->
-  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <!-- <script src="https://accounts.google.com/gsi/client" async defer></script> -->
   <script>
     AOS.init({
       duration: 2000
     });
 
-    function decodeJwtResponse(token) {
-        const parts = token.split('.'),
-              payload = parts[1],
-              decodedPayload = JSON.parse(atob(payload));
-        return decodedPayload;
-    }
+    // function decodeJwtResponse(token) {
+    //     const parts = token.split('.'),
+    //           payload = parts[1],
+    //           decodedPayload = JSON.parse(atob(payload));
+    //     return decodedPayload;
+    // }
 
-    function handleCredentialResponse(response) {
-      const responsePayload = decodeJwtResponse(response.credential);
-      console.log(`
-        照片 ${ responsePayload.picture }
-        全名 ${ responsePayload.name }
-        姓氏 ${ responsePayload.family_name }
-        名字 ${ responsePayload.given_name }
-        信箱 ${ responsePayload.email }
-        發行者 ${ responsePayload.iss }
-      `);
-    }
+    // function handleCredentialResponse(response) {
+    //   const responsePayload = decodeJwtResponse(response.credential);
+    //   console.log(`
+    //     照片 ${ responsePayload.picture }
+    //     全名 ${ responsePayload.name }
+    //     姓氏 ${ responsePayload.family_name }
+    //     名字 ${ responsePayload.given_name }
+    //     信箱 ${ responsePayload.email }
+    //     發行者 ${ responsePayload.iss }
+    //   `);
+    // }
   </script>
 </body>
 
